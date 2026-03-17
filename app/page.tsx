@@ -165,6 +165,15 @@ export default function HomePage() {
             >
               {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
             </button>
+
+            <a
+              href="/SMIT_RESUME.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-teal-400/30 bg-teal-400/10 px-3 py-2 text-sm font-medium text-violet-200 transition hover:bg-teal-400/20 md:px-4"
+            >
+              Resume
+            </a>
           </motion.div>
         </nav>
       </header>
