@@ -276,6 +276,15 @@ export default function HomePage() {
               >
                 View Projects
               </Link>
+
+              <a
+                href="/SMIT_RESUME.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 font-medium text-white transition hover:bg-white/10"
+              >
+                Download Resume
+              </a>
             </motion.div>
           </motion.div>
 
