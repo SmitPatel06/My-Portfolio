@@ -157,14 +157,6 @@ export default function HomePage() {
             transition={{ duration: 0.25 }}
             className="flex items-center gap-2 overflow-hidden whitespace-nowrap"
           >
-            <button
-              onClick={toggleTheme}
-              className="rounded-full border border-white/10 bg-white/5 p-2.5 text-slate-300 transition hover:border-teal-400/30 hover:bg-teal-400/10 hover:text-white"
-              aria-label="Toggle theme"
-              title="Toggle theme"
-            >
-              {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
-            </button>
 
             <a
               href="/SMIT_RESUME.pdf"
