@@ -299,26 +299,25 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <div className="mt-6 grid gap-4 md:grid-cols-3">
                 {[
-                  ["Projects", `${projects.length}`.padStart(2, "0")],
                   ["Core Focus", "Web / Data / Cloud"],
                   ["Status", "Open to Opportunities"],
                   ["Location", "Thunder Bay"],
                 ].map(([label, value]) => (
                   <motion.div
                     key={label}
-                    className="rounded-2xl border border-white/10 bg-zinc-900/70 p-4"
+                    className="flex min-h-[170px] flex-col justify-center rounded-[999px] border border-white/10 bg-zinc-900/70 px-6 py-8 text-center"
                     whileHover={{
-                      scale: 1.02,
+                      scale: 1.03,
                       borderColor: "rgba(45,212,191,0.38)",
                     }}
                     transition={{ duration: 0.2 }}
                   >
-                    <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
+                    <p className="text-xs uppercase tracking-[0.25em] text-slate-500">
                       {label}
                     </p>
-                    <p className="mt-2 text-lg font-semibold text-white">
+                    <p className="mt-3 text-lg font-semibold leading-8 text-white">
                       {value}
                     </p>
                   </motion.div>
@@ -610,7 +609,6 @@ export default function HomePage() {
             >
               <Github size={18} />
             </a>
-
           </div>
         </div>
       </footer>
