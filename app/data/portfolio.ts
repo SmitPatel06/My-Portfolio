@@ -26,7 +26,8 @@ export const projects = [
   },
   {
     slug: "cloud-based-credit-risk-prediction",
-    title: "cloud-based-credit-risk-prediction",
+    title: "Cloud-Based Credit Risk Prediction",
+    
     description:
       "Built a real-time credit risk prediction system using Random Forest, AWS SageMaker, and Streamlit to assess borrower default risk through a secure cloud-based pipeline.",
     stack: ["Python",
