@@ -15,6 +15,20 @@ export const skills = {
 
 export const projects = [
   {
+  title: "Improving the Robustness of Equilibrium Propagation Through Variable Time Constants",
+  type: "Research Project",
+  description:
+    "Designed and implemented a research project on Equilibrium Propagation as a biologically inspired learning method for MNIST digit classification using variable time constants.",
+  stack: ["Python", "PyTorch", "Equilibrium Propagation", "MNIST", "Deep Learning"],
+  result:
+    "Tested Gaussian and Uniform time-step configurations across multiple random seeds, showing stable performance and stronger overall results with the uniform configuration.",
+  github:
+    "https://github.com/SmitPatel06/Improving-the-Robustness-of-Equilibrium-Propagation-Through-Variable-Time-Constants.git",
+  arxiv: "https://arxiv.org/abs/2603.03402",
+  ccn: "https://drive.google.com/file/d/1LbcNC-wnTmGgWiRT9JT2hTa78hdaES1V/view?usp=sharing",
+  },
+
+  {
     slug: "twitter-big-data-analysis",
     title: "Twitter Big Data Analysis",
     description:
