@@ -314,7 +314,7 @@ export default function HomePage() {
                   {[
                     ["Core Focus", "Web / Data / Cloud"],
                     ["Status", "Open to Opportunities"],
-                    ["Location", "Thunder Bay"],
+                    ["Location", "Toronto"],
                   ].map(([label, value]) => (
                     <div
                       key={label}

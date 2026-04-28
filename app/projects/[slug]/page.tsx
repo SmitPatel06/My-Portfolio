@@ -16,7 +16,7 @@ export default async function ProjectDetail({
 
   return (
     <main className="min-h-screen px-6 py-16 text-slate-100 lg:px-10">
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-5xl">
         <Link
           href="/projects"
           className="inline-flex items-center rounded-full border border-teal-400/20 bg-teal-400/10 px-4 py-2 text-sm font-medium text-teal-100 transition hover:bg-teal-400/20"
@@ -25,10 +25,10 @@ export default async function ProjectDetail({
         </Link>
 
         <p className="mt-10 text-sm uppercase tracking-[0.35em] text-teal-300">
-          Project
+          {project.type || "Project"}
         </p>
 
-        <h1 className="mt-4 text-4xl font-semibold text-white md:text-5xl">
+        <h1 className="mt-4 text-4xl font-semibold leading-tight text-white md:text-5xl">
           {project.title}
         </h1>
 
@@ -57,6 +57,28 @@ export default async function ProjectDetail({
             Source Code
           </a>
 
+          {project.arxiv && (
+            <a
+              href={project.arxiv}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-2xl border border-white/10 bg-white/5 px-5 py-3 font-medium text-white transition hover:bg-white/10"
+            >
+              arXiv Paper
+            </a>
+          )}
+
+          {project.ccn && (
+            <a
+              href={project.ccn}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-2xl border border-white/10 bg-white/5 px-5 py-3 font-medium text-white transition hover:bg-white/10"
+            >
+              CCN Paper
+            </a>
+          )}
+
           <Link
             href="/projects"
             className="rounded-2xl border border-white/10 bg-white/5 px-5 py-3 font-medium text-white transition hover:bg-white/10"
@@ -77,9 +99,10 @@ export default async function ProjectDetail({
             Overview
           </p>
           <p className="mt-3 leading-8 text-slate-300">
-            This project is part of my portfolio and highlights my practical
-            experience in software development, problem-solving, and building
-            useful systems with modern tools and frameworks.
+            This project highlights practical experience in research,
+            experimentation, and building machine learning systems with modern
+            tools and frameworks. It demonstrates both implementation depth and
+            performance evaluation across multiple configurations.
           </p>
         </div>
       </div>
